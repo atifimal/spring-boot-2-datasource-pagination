@@ -1,0 +1,23 @@
+create table public.employee (
+	id INT,
+	first_name VARCHAR(50),
+	last_name VARCHAR(50),
+	email VARCHAR(50),
+	gender VARCHAR(50),
+	ip_address VARCHAR(20),
+	creation_date DATE,
+	department VARCHAR(50),
+	salary INT,
+	performance DECIMAL(3,1),
+	active boolean
+);
+insert into public.employee (id, first_name, last_name, email, gender, ip_address, creation_date, department, salary, performance, active) values (1, 'Ivette', 'Tumber', 'itumber0@google.co.uk', 'Female', '72.241.99.243', '12/6/2022', 'Sales', 2332, 7.7, true);
+insert into public.employee (id, first_name, last_name, email, gender, ip_address, creation_date, department, salary, performance, active) values (2, 'Micheal', 'Lamble', 'mlamble1@digg.com', 'Male', '185.189.181.185', '12/13/2022', 'Services', 1701, 6.1, false);
+insert into public.employee (id, first_name, last_name, email, gender, ip_address, creation_date, department, salary, performance, active) values (3, 'Cami', 'Swindells', 'cswindells2@washington.edu', 'Polygender', '83.74.69.125', '7/22/2023', 'Engineering', 5341, 9.8, true);
+insert into public.employee (id, first_name, last_name, email, gender, ip_address, creation_date, department, salary, performance, active) values (4, 'Valenka', 'Wrout', 'vwrout3@quantcast.com', 'Female', '93.179.89.158', '5/7/2023', 'Product Management', 2795, 2.0, true);
+insert into public.employee (id, first_name, last_name, email, gender, ip_address, creation_date, department, salary, performance, active) values (5, 'Grazia', 'Tschirasche', 'gtschirasche4@spotify.com', 'Female', '17.46.209.88', '3/4/2023', 'Research and Development', 4607, 7.4, true);
+insert into public.employee (id, first_name, last_name, email, gender, ip_address, creation_date, department, salary, performance, active) values (6, 'Cynthia', 'McGeouch', 'cmcgeouch5@sina.com.cn', 'Female', '108.248.249.18', '12/22/2022', 'Training', 4662, 10.0, false);
+insert into public.employee (id, first_name, last_name, email, gender, ip_address, creation_date, department, salary, performance, active) values (7, 'Dede', 'Loffhead', 'dloffhead6@sfgate.com', 'Female', '239.230.198.173', '8/21/2023', 'Marketing', 1583, 7.2, true);
+insert into public.employee (id, first_name, last_name, email, gender, ip_address, creation_date, department, salary, performance, active) values (8, 'Xavier', 'Sammons', 'xsammons7@huffingtonpost.com', 'Male', '5.71.108.148', '5/22/2023', 'Services', 5263, 0.6, false);
+insert into public.employee (id, first_name, last_name, email, gender, ip_address, creation_date, department, salary, performance, active) values (9, 'Tiebold', 'Tipple', 'ttipple8@shop-pro.jp', 'Male', '134.51.75.32', '7/27/2023', 'Accounting', 1530, 4.7, true);
+insert into public.employee (id, first_name, last_name, email, gender, ip_address, creation_date, department, salary, performance, active) values (10, 'Ericka', 'Rastrick', 'erastrick9@businessinsider.com', 'Female', '253.99.199.20', '8/8/2023', 'Human Resources', 5585, 0.3, false);
