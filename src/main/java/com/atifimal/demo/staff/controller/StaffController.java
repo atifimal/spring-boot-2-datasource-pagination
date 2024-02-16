@@ -1,7 +1,7 @@
-package com.atifimal.demo.stuff.controller;
+package com.atifimal.demo.staff.controller;
 
-import com.atifimal.demo.stuff.entity.Stuff;
-import com.atifimal.demo.stuff.repository.StuffRepository;
+import com.atifimal.demo.staff.entity.Staff;
+import com.atifimal.demo.staff.repository.StaffRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -13,13 +13,13 @@ import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("stuff")
-public class StuffController {
+@RequestMapping("staff")
+public class StaffController {
 
-    private final StuffRepository stuffRepository;
+    private final StaffRepository staffRepository;
 
     @GetMapping("all")
-    public ResponseEntity<List<Stuff>> getAll() {
-        return new ResponseEntity<>(stuffRepository.findAll(), HttpStatus.OK);
+    public ResponseEntity<List<Staff>> getAll() {
+        return new ResponseEntity<>(staffRepository.findAll(), HttpStatus.OK);
     }
 }

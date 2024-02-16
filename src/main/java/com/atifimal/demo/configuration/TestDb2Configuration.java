@@ -16,7 +16,7 @@ import javax.sql.DataSource;
 @EnableTransactionManagement
 @EnableJpaRepositories(
         entityManagerFactoryRef = "testDb2EntityManagerFactory",
-        basePackages = {"com.atifimal.demo.stuff"})
+        basePackages = {"com.atifimal.demo.staff"})
 public class TestDb2Configuration {
 
     @Bean(name = "testDb2DataSource")
@@ -30,8 +30,8 @@ public class TestDb2Configuration {
             EntityManagerFactoryBuilder builder, @Qualifier("testDb2DataSource") DataSource dataSource) {
         return builder
                 .dataSource(dataSource)
-                .packages("com.atifimal.demo.stuff")
-                .persistenceUnit("stuff")
+                .packages("com.atifimal.demo.staff")
+                .persistenceUnit("staff")
                 .build();
     }
 }
